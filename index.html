@@ -4,6 +4,25 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Sorteio Krill</title>
+<link rel="icon" type="image/png" href="https://i.postimg.cc/0Qyn9pry/logo.png" />
+<link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/0Qyn9pry/logo.png" />
+<link rel="apple-touch-icon" href="https://i.postimg.cc/0Qyn9pry/logo.png" />
+
+<meta name="description" content="Sorteio Krill — sistema de sorteio de nomes com visual futurista." />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Sorteio Krill" />
+<meta property="og:description" content="Sistema de sorteio de nomes com visual futurista." />
+<meta property="og:image" content="https://i.postimg.cc/gkj03rLG/d85df777-72e5-4621-9e5a-2b25647b2c96.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://sorteio-krill.netlify.app" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Sorteio Krill" />
+<meta name="twitter:description" content="Sistema de sorteio de nomes com visual futurista." />
+<meta name="twitter:image" content="https://i.postimg.cc/gkj03rLG/d85df777-72e5-4621-9e5a-2b25647b2c96.jpg" />
+
 <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,6 +108,9 @@
     width: auto;
     filter: drop-shadow(0 0 20px var(--glow)) drop-shadow(0 0 40px rgba(0, 212, 255, 0.3));
     animation: floatLogo 4s ease-in-out infinite;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
   }
   @keyframes floatLogo {
     0%, 100% { transform: translateY(0); }
@@ -483,7 +505,7 @@
 <body>
   <div class="container">
     <header>
-      <img src="https://i.imgur.com/QGbp3pe.png" alt="Logo Krill" />
+      <img src="https://i.imgur.com/QGbp3pe.png" alt="Logo Krill" draggable="false" oncontextmenu="return false;" />
       <h1>Sorteio</h1>
     </header>
 
